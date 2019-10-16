@@ -1,0 +1,31 @@
+{
+  "name": "undefined1.14.0",
+  "version": "1.0.0",
+  "description": "[![NPM version](https://img.shields.io/npm/v/undefined1.14.0.svg)](https://www.npmjs.com/package/undefined1.14.0)",
+  "main": "index.js",
+  "bin": {},
+  "config": {},
+  "scripts": {
+    "i": "node index.js",
+    "test": "node test.js",
+    "wpk": "webpack"
+  },
+  "keywords": [],
+  "author": "zc.lee <lzc1384@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "file-loader": "*",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "*",
+    "webpack": "^1.14.0"
+  }
+}
