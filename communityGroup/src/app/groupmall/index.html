@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <% if (htmlWebpackPlugin.options.prod) { %>
+        <!-- 生产资源 放这 -->
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.module%>.css">
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.options.host %>./public/iview/iview.css">
+    <% } %>
+    <% if (!htmlWebpackPlugin.options.prod) { %>
+        <!-- 开发资源 放这 -->
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.options.host %>../public/iview/iview.css">
+    <% } %>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="https://webapi.amap.com/maps?v=1.4.11&key=5834a95f0e9d1a6794a4c21dd275f6cd"></script>
+    <% if (htmlWebpackPlugin.options.prod) { %>
+        <!-- 生产资源 放这 -->
+    <script type="text/javascript" src="<%= htmlWebpackPlugin.options.module%>.js"></script>
+    <% } %>
+    <% if (!htmlWebpackPlugin.options.prod) { %>
+        <!-- 开发资源 放这 -->
+    <script type="text/javascript" src=" <%= htmlWebpackPlugin.options.host %>/vendor.dll.js "></script>
+    <% } %>
+</body>
+
+</html>

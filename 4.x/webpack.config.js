@@ -2,7 +2,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const styleLoader = 'style-loader'
 // const styleLoader = MiniCssExtractPlugin.loader
-module.exports = {
+const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+const smp = new SpeedMeasurePlugin();
+module.exports = smp.wrap({
     mode: 'development',
     // spa
     entry: './index.js',
@@ -86,4 +88,4 @@ module.exports = {
         index: 'index.html',
         open: true
     }
-}
+})

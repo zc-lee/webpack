@@ -1,0 +1,35 @@
+@import './width.css';
+@import './margin.css';
+@import './cursor.css';
+@import './line.css';
+@import './line-height.css';
+@import './flex.css';
+@import './height.css';
+@import './table.css';
+@import './padding.css';
+@import './border.css';
+@import './width-height.css';
+@import './background.css';
+@import './align.css';
+@import './position.css';
+@import './font.css';
+@import './display.css';
+@import './radius.css';
+@import './overflow.css';
+@import './shadow.css';
+@import './temp.css';
+@import './transition/index.css';
+@import './opacity.css';
+
+
+
+
+.noselect {
+  -webkit-touch-callout: none;  /* iOS Safari */
+  -webkit-user-select  : none;  /* Chrome/Safari/Opera */
+  -khtml-user-select   : none;  /* Konqueror */
+  -moz-user-select     : none;  /* Firefox */
+  -ms-user-select      : none;  /* Internet Explorer/Edge */
+  user-select          : none;  /* Non-prefixed version, currently
+  not supported by any browser */
+  }
